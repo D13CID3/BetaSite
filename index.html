@@ -220,7 +220,7 @@
     }
   </style>
   <script>
-    const referenceCode = 'aHR0cHM6Ly9wZXJpbGFzdHJvbmF1dC5jb20vbmFkbTV2NDF1P2tleT02ZmEzOGYzNTkxYjRjYzZlMTFkNTFlOWM0NjU1ZGZjZQ==';
+    
 
     let links = [
       'https://www.profitablecpmrate.com/apax959ne?key=138f86ef726fd1bc51552b0b6827c168', // Dito ilalagay Direct Link
@@ -229,6 +229,7 @@
       'https://www.profitablecpmrate.com/k3h1crazv?key=1627c833cfba1a9d54439095eee52f7a', // Dito ilalagay Direct Link
       'https://www.profitablecpmrate.com/r4k1jfk5i?key=a96e16606ffefc0d29f640d1cb7af855' // Dito ilalagay Direct Link
     ];
+    
     let currentIndex = 0;
     let autoNavigateInterval;
 
@@ -251,7 +252,7 @@
     }
 
     function getCurrentLink() {
-      return currentIndex === 0 ? decodeBase64(referenceCode) : links[currentIndex - 1];
+      return links[currentIndex];
     }
 
     function showLink(index) {
