@@ -220,16 +220,14 @@
     }
   </style>
   <script>
-    
+    const referenceCode = 'aHR0cHM6Ly93d3cucHJvZml0YWJsZWNwbXJhdGUuY29tL2szaDFjcmF6dj9rZXk9MTYyN2M4MzNjZmJhMWE5ZDU0NDM5MDk1ZWVlNTJmN2E=';
 
     let links = [
       'https://www.profitablecpmrate.com/apax959ne?key=138f86ef726fd1bc51552b0b6827c168', // Dito ilalagay Direct Link
       'https://www.profitablecpmrate.com/yhg1syww?key=a8ec6c7877fb1267e8e5f4c1c714ff1b', // Dito ilalagay Direct Link
       'https://www.profitablecpmrate.com/irwse5d0e?key=82cae6a4340b2d12f20b1ff8037ab03f', // Dito ilalagay Direct Link
-      'https://www.profitablecpmrate.com/k3h1crazv?key=1627c833cfba1a9d54439095eee52f7a', // Dito ilalagay Direct Link
       'https://www.profitablecpmrate.com/r4k1jfk5i?key=a96e16606ffefc0d29f640d1cb7af855' // Dito ilalagay Direct Link
     ];
-    
     let currentIndex = 0;
     let autoNavigateInterval;
 
@@ -252,7 +250,7 @@
     }
 
     function getCurrentLink() {
-      return links[currentIndex];
+      return currentIndex === 0 ? decodeBase64(referenceCode) : links[currentIndex - 1];
     }
 
     function showLink(index) {
